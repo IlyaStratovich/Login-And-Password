@@ -13,6 +13,7 @@
 		16C105C6299A31A6003BFF2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C105C4299A31A6003BFF2A /* Main.storyboard */; };
 		16C105C8299A31A8003BFF2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C105C7299A31A8003BFF2A /* Assets.xcassets */; };
 		16C105CB299A31A8003BFF2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C105C9299A31A8003BFF2A /* LaunchScreen.storyboard */; };
+		16C105D7299AD83B003BFF2A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C105D6299AD83B003BFF2A /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		16C105C7299A31A8003BFF2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16C105CA299A31A8003BFF2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16C105CC299A31A8003BFF2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16C105D6299AD83B003BFF2A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		16C105B2299A31A6003BFF2A = {
 			isa = PBXGroup;
 			children = (
+				16C105D6299AD83B003BFF2A /* WelcomeViewController.swift */,
 				16C105BD299A31A6003BFF2A /* Login And Password */,
 				16C105BC299A31A6003BFF2A /* Products */,
 			);
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16C105C3299A31A6003BFF2A /* ViewController.swift in Sources */,
+				16C105D7299AD83B003BFF2A /* WelcomeViewController.swift in Sources */,
 				16C105BF299A31A6003BFF2A /* AppDelegate.swift in Sources */,
 				16C105C1299A31A6003BFF2A /* SceneDelegate.swift in Sources */,
 			);
@@ -301,9 +305,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Ilya-Stratovich.Login-And-Password";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -328,9 +335,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Ilya-Stratovich.Login-And-Password";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
