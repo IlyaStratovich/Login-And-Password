@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+// MARK: MainViewController
 final class ViewController: UIViewController {
     
    // MARK: IBOutlets
@@ -29,6 +29,7 @@ final class ViewController: UIViewController {
         self.view.endEditing(true)
     }
     
+    // MARK: Prepare for segue method
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else
         { return }
@@ -39,17 +40,13 @@ final class ViewController: UIViewController {
     // MARK: IBActions
     
     @IBAction func logInButtonDidTap() {
-        if userNameTF.text != "User" {
+        if userNameTF.text != "User" || passwordTF.text != "1" {
             showAlert(
     withTitle: "Invalid login or password",
     andMessage: "Please, enter correct login and password"
 )
-            passwordTF.text?.removeAll()
-        } else if passwordTF.text != "1" {
-            showAlert(
-    withTitle: "Invalid login or password",
-    andMessage: "Please, enter correct login and password"
-)
+
+            
             passwordTF.text?.removeAll()
         }
     }
@@ -73,7 +70,11 @@ final class ViewController: UIViewController {
 
 extension ViewController {
     private func showAlert(withTitle title: String, andMessage message: String) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let alert = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: .alert
+        )
         let okAction = UIAlertAction(title: "Ok", style: .default)
         alert.addAction(okAction)
         present(alert, animated: true)
