@@ -141,6 +141,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="viewController" destination="3vC-d3-ZdP" id="iEn-Ye-Qsy"/>
                         <outlet property="welcomeLabel" destination="YbT-7S-QrF" id="xPW-ZT-2as"/>
                     </connections>
                 </viewController>
